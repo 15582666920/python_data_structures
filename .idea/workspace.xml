@@ -40,7 +40,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/disorderString.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-267">
+            <state relative-caret-position="-90">
               <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
@@ -67,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1107" />
     <option name="y" value="8" />
     <option name="width" value="785" />
@@ -183,7 +183,7 @@
     <option name="totallyTimeSpent" value="9872000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="886" y="7" width="628" height="668" extended-state="0" />
+    <frame x="886" y="7" width="628" height="668" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.65316904" />
@@ -191,7 +191,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33146068" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33146068" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -234,7 +234,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/disorderString.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
+        <state relative-caret-position="-90">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
