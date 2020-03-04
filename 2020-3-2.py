@@ -19,7 +19,7 @@ def sumOfN2(n):
 start_time = time.time()
 print(sumOfN2(10000000))
 end_time = time.time()
-print(end_time-start_time)
+# print(end_time-start_time)
 
 # def foo(lala):
 #     a = 0
@@ -28,3 +28,4 @@ print(end_time-start_time)
 #         a = a + c
 #     return a
 # print(foo(10))
+print(9//2)
