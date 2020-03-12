@@ -82,22 +82,107 @@
 '''
 
 
-def shellSort(alist):
-    sublistcount=len(alist)//2
-    while sublistcount>0:
-        for startposition in range(sublistcount):
-            gapInsertionSort(alist,startposition,sublistcount)
-        print('alist:',alist)
-        sublistcount=sublistcount//2
-def gapInsertionSort(alist, start, gap):
-    for i in range(start + gap, len(alist), gap):
-        currentValue = alist[i]
+# def shellSort(alist):
+#     sublistcount = len(alist) // 2
+#     while sublistcount > 0:
+#         for startposition in range(sublistcount):
+#             gapInsertionSort(alist, startposition, sublistcount)
+#         print('alist:', alist)
+#         sublistcount = sublistcount // 2
+#
+#
+# def gapInsertionSort(alist, start, gap):
+#     for i in range(start + gap, len(alist), gap):
+#         currentValue = alist[i]
+#
+#         pos = i
+#         while pos > 0 and alist[pos - 1] > currentValue:
+#             alist[pos] = alist[pos - gap]
+#             pos = pos - gap
+#         alist[pos] = currentValue
+#     return alist
+#
+#
+# alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+# shellSort(alist)
 
-        pos = i
-        while pos > 0 and alist[pos - 1] > currentValue:
-            alist[pos] = alist[pos - gap]
-            pos = pos - gap
-        alist[pos] = currentValue
-    return  alist
-alist=[54,26,93,17,77,31,44,55,20]
-shellSort(alist)
+'''
+归并排序
+'''
+
+
+# def mergeSort(alist):
+#     if len(alist) > 1:
+#         mid = len(alist) // 2
+#         leftHalf = alist[:mid]
+#         riggtGalf = alist[mid:]
+#
+#         mergeSort(leftHalf)
+#         mergeSort(riggtGalf)
+#         i = 0
+#         j = 0
+#         k = 0
+#         while i < len(leftHalf) and j < len(riggtGalf):
+#             if leftHalf[0] < riggtGalf[0]:
+#                 alist[k] = leftHalf[i]
+#                 i = i + 1
+#             else:
+#                 alist[k] = riggtGalf[j]
+#                 j = j + 1
+#             k = k + 1
+#         while i < len(leftHalf) and k<len(alist):
+#             alist[k] = leftHalf[i]
+#             j = j + 1
+#             k = k + 1
+#         while j < len(riggtGalf) and k<len(alist):
+#             alist[k] = riggtGalf[i]
+#             j = j + 1
+#             k = k + 1
+#
+# alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+# print('合并',alist)
+# mergeSort(alist)
+# print(alist)
+
+"""
+    快速排序
+"""
+def quickSort(alist):
+    quickSortHelper(alist,0,len(alist)-1)
+
+# 递归调用对数列进行分区
+def quickSortHelper(alist,first,last):
+    pass
+
+#  选出基准点
+def partition(alist,first,last):
+    # 定义基准点
+    pivotvalue = alist[first]
+
+    leftMark = first + 1
+    rightMark = last
+
+    # 停止比对
+    done = False
+
+    while not done:
+
+        while leftMark <= rightMark and alist[leftMark] <= pivotvalue:
+            leftMark = leftMark + 1
+
+        while alist[rightMark] >= pivotvalue and rightMark >= leftMark:
+            rightMark = rightMark - 1
+
+        if rightMark < leftMark:
+            done = True
+
+        else:
+            temp = alist[leftMark]
+            alist[leftMark] = alist[rightMark]
+            alist[rightMark] = temp
+
+    temp = alist[first]
+    alist[first] = alist[rightMark]
+    alist[rightMark] = temp
+
+    return rightMark
